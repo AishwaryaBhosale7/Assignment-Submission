@@ -1,0 +1,32 @@
+Q.1
+Ans:-
+<html>
+    <body>
+
+    </body>
+<script>
+    const clothes=['jacket','t-shirt'];
+    clothes.length=0;
+    console.log(clothes[0]);
+</script>
+    </html>
+
+Output:-
+undefined
+(Because we have made clothes.length=0 but the actual length is 2)
+
+Q.2
+Ans:-
+<html>
+    <body>
+
+    </body>
+    <script>
+      console.log([1,2,3,4,5].reduce(function(acc, val)
+       { return acc + val; }, 0)
+) 
+    </script>
+</html>
+
+Output:-
+15
