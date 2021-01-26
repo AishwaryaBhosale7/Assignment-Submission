@@ -1,0 +1,41 @@
+Q.1
+Ans:-
+By 3 ways we can access elements in DOM.
+They are:
+1.document.getElementsByTagName()
+We can access elements through tag i.e h1 or p etc.
+The result in console will be displayed in array type
+      HTMLCollection(2) [p, p]
+We can access more than one element as we have used .getElements
+
+2.document.getElementsByClassName()
+We can access elements through class name i.e <div class="ab">.
+The result in console will be displayed in array type
+We can access more than one element as we have used .getElements
+
+3.document.getElementById()
+We can access elements through id i.e <div id="ab">.
+The result in console will not be displayed in array type as each id is different to different elements.
+We cannot access more than one element as we have used .getElement
+
+Q.2
+Ans:-
+<html>
+    <body>
+     Enter First Number :- <input type="text" id="num1">
+     <br>
+     Enter Second Number :- <input type="text" id="num2">
+     <br>
+     <button onclick="fun()">Add</button>
+     <input type="text" id="num3">
+</body>
+    <script>
+function fun()
+{
+    var a=Number(document.getElementById("num1").value);
+    var b=Number(document.getElementById("num2").value);
+    var c=a + b;
+    document.getElementById("num3").value=c;
+}
+    </script>
+</html>
